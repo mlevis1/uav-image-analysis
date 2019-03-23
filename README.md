@@ -1,4 +1,4 @@
-# Analysis of Thermal Imaging Using CNN/SVM Classification
+### Analysis of Thermal Imaging Using Machine and Predictive Learning Classification
 
 This repository contains the code for the final project in Earth Analytics to analyze data acquired by UAV sensors. Thermal imaging of
 powerlines and utility poles allow utility companies to identify objects that emit excessive heat before they fail. An efficient and cost-
