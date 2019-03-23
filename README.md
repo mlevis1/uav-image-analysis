@@ -13,7 +13,6 @@ learning algorithms to classify the images as either good or bad prior to being 
 This program requires the following packages:
 
 Python
-
 numpy
 
 pandas
