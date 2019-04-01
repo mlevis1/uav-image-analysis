@@ -32,5 +32,5 @@ glob
 
 cv2
 
-Image files in .jpg format are read from folders using the read_images function, and then input into the learning model that has been
+Image files in .jpg format are read from folders using the read_images function, and then input into a learning model that has been
 trained with a sample of images of known quality. Image names and classifications (0 for good, 1 for blacked-out, 2 for saturated, 3 for blurry) are read from a .csv file. Output is a dataframe of image names labeled as good, blacked-out, saturated, or blurry.
