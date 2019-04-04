@@ -1,36 +1,15 @@
 ### Analysis of Thermal Imaging Using Machine and Predictive Learning Classification
 
 This repository contains the code for the final project in Earth Analytics to analyze data acquired by UAV sensors. Thermal imaging of
-powerlines and utility poles allow utility companies to identify objects that emit excessive heat before they fail. An efficient and cost-
-effective method of aquiring these images is through the use of drone mounted FLIR sensors. These return .jpg files measuring 640 x 512
-pixels in 256 shades in the long range infrared part of the electromagnetic spectrum (3.0 - 5.0 µm...double check this range, as long
-range IR can be 3 - 12µm). 
+powerlines and utility poles allow utility companies to identify objects that emit excessive heat before they fail. An efficient and cost-effective method of aquiring these images is through the use of drone mounted FLIR sensors. These return .jpg files measuring 640 x 512 pixels in 256 shades in the long range infrared band of the electromagnetic spectrum.
 
-Approximately 20% of these images are considered useless after review by the termographer, usually due to being nearly or completely
-blacked-out. At $0.05 per image, removing these images prior to review could result in significant cost savings. This program uses machine
-learning algorithms to classify the images as either good or bad prior to being passed on for human review. 
+Approximately 20% of these images are considered useless after review by the thermographer, often due to being blacked-out, saturated, or blurry. At $0.05 per image, removing these images prior to review could result in significant cost savings. This program uses machine
+learning algorithms to classify the images prior to being passed on for human review. 
 
-This program requires the following packages:
-
-Python
-
-numpy
-
-pandas
-
-matplotlib
-
-scipy
-
-sklearn
-
-keras
-
-os 
-
-glob
-
-cv2
+The workflow requires the following Python packages: NumPy, Pandas, Matplotlib, Scipy, Sklearn, Keras, os, glob, cv2.
 
 Image files in .jpg format are read from folders using the read_images function, and then input into a learning model that has been
-trained with a sample of images of known quality. Image names and classifications (0 for good, 1 for blacked-out, 2 for saturated, 3 for blurry) are read from test-images.csv. Output is a dataframe of image names labeled as good, blacked-out, saturated, or blurry. I am currently working with 2,250 labeled training and test images.
+trained with a sample of images of known quality. Image names and classifications (0 for good, 1 for blacked-out, 2 for saturated, 3 for blurry) are read from test-images.csv. I am currently working with 424 labeled training and test images.
+
+The final product will consist of a python module with which the user will input new folders of data for processing. Output is a dataframe
+of image names labeled as good, blacked-out, saturated, or blurry. 
