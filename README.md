@@ -28,7 +28,7 @@ test_notebooks: Contain miscellaneous notebooks for viewing and manipulating dat
 
 fit_models.py: read_images reads in images and returns list of picture ID numbers based on the image name
 
-               svm_layers builds layers of SVM and fits model to the data
-               
-               supervised_models fits supervised models to the data and returns metrics
+svm_layers builds layers of SVM and fits model to the data
+              
+supervised_models fits supervised models to the data and returns metrics
                
