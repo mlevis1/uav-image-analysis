@@ -16,7 +16,7 @@ of image names labeled as good, blacked-out, saturated, or blurry.
 
 ### Notebooks
 
-svm_model: 80% train and 20% test for Support Vector Machine (SVM), logistic regression, random forest classifier, and gradient boosting models. Provides code to serialize and save machine learning algorithms.
+svm_model: 80% train and 20% test for Support Vector Machine (SVM), logistic regression, random forest classifier, and gradient boosting models. Provides code to serialize and save machine learning algorithms./
 cnn_model: 80% train and 20% test for Convolutional Neural Network (CNN). Provides code to serialize and save machine learning algorithm.
 final_product: Loads model for use with new, unlabeled data sets.
 test_notebooks: Contain miscellaneous notebooks for viewing and manipulating data.
