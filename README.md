@@ -11,14 +11,13 @@ The workflow requires the following Python 3.6.5 packages: NumPy, Pandas, Matplo
 Image files in .jpg format are read from folders using the read_images function, and then input into a learning model that has been
 trained with a sample of images of known quality. Image names and classifications (0 for good, 1 for blacked-out, 2 for saturated, 3 for blurry) are read from test-images.csv. I am currently working with 424 labeled training and test images.
 
-The final product will consist of a python module with which the user will input new folders of data for processing. Output is a dataframe
-of image names labeled as good, blacked-out, saturated, or blurry. 
+The final product will consist of a python module with which the user will input new folders of data for processing. Output is a dataframe of image names labeled as good, blacked-out, saturated, or blurry. 
 
 ### Notebooks
 
-svm_model: 80% train and 20% test for Support Vector Machine (SVM), logistic regression, random forest classifier, and gradient boosting models. Provides code to serialize and save machine learning algorithms.
+svm_model: 60% train and 40% test for Support Vector Machine (SVM), logistic regression, random forest classifier, and gradient boosting models. Provides code to serialize and save machine learning algorithms.
 
-cnn_model: 80% train and 20% test for Convolutional Neural Network (CNN). Provides code to serialize and save machine learning algorithm.
+cnn_model: 60% train and 40% test for Convolutional Neural Network (CNN). Provides code to serialize and save machine learning algorithm.
 
 final_product: Loads model for use with new, unlabeled data sets.
 
