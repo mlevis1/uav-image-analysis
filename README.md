@@ -9,13 +9,13 @@ learning algorithms to classify the images prior to being passed on for human re
 The workflow requires the following Python 3.6.5 packages: 
 * NumPy 
 * Pandas  
-Matplotlib 
-Scipy 
-Sklearn 
-Keras
-os 
-glob
-cv2
+* Matplotlib 
+* Scipy 
+* Sklearn 
+* Keras
+* os 
+* glob
+* cv2
 
 Image files in .jpg format are read from folders using the read_images function, and then input into a learning model that has been
 trained with a sample of images of known quality. Image names and classifications (0 for good, 1 for blacked-out, 2 for saturated, 3 for blurry) are read from test-images.csv. I am currently working with 424 labeled training and test images.
