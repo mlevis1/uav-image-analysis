@@ -6,7 +6,7 @@ powerlines and utility poles allow utility companies to identify objects that em
 Approximately 20% of these images are considered useless after review by the thermographer, often due to being blacked-out, saturated, or blurry. At $0.05 per image, removing these images prior to review could result in significant cost savings. This program uses machine
 learning algorithms to classify the images prior to being passed on for human review. 
 
-The workflow requires the following Python 3.6.5 packages: * NumPy, * Pandas, Matplotlib, Scipy, Sklearn, Keras, os, glob, cv2.
+The workflow requires the following Python 3.6.5 packages: *NumPy, *Pandas, Matplotlib, Scipy, Sklearn, Keras, os, glob, cv2.
 
 Image files in .jpg format are read from folders using the read_images function, and then input into a learning model that has been
 trained with a sample of images of known quality. Image names and classifications (0 for good, 1 for blacked-out, 2 for saturated, 3 for blurry) are read from test-images.csv. I am currently working with 424 labeled training and test images.
