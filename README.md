@@ -13,8 +13,7 @@ The workflow requires the following Python 3.6.5 packages:
 * Scipy 
 * Sklearn 
 * Keras
-* os 
-* glob
+* Rasterio
 * cv2
 
 Image files in .jpg format are read from folders using the read_images function, and then input into a learning model that has been
