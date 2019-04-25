@@ -14,7 +14,7 @@ from sklearn.metrics import accuracy_score
 
 def read_images(paths):
     """
-    Reads in all images and returns list of picture id numbers based on the image name
+    Reads in all images and returns list of picture id numbers based on the image name and list of file paths
 
     Parameters
     ----------
@@ -23,6 +23,8 @@ def read_images(paths):
     Returns
     ----------
     data : list of image id numbers
+    
+    images : list of file paths
     """
     # Get list of images
     images = glob(paths + '*.jpg')
@@ -32,7 +34,7 @@ def read_images(paths):
     data = data.reshape((len(data),-1))
 
     print(data.shape)
-    return data
+    return data, images
 
 def svm_layers(X_train, y_train, X_test, y_test):
     """
@@ -53,8 +55,9 @@ def svm_layers(X_train, y_train, X_test, y_test):
     ------------
     model metrics evaluation
     """
-
+    # Create instance of SVM model gamma value 0.001. Default value is "auto"
     model = svm.SVC(gamma=0.001)
+    # Fit SVM model using training data attributes and labels
     model.fit(X_train,y_train)
     y_pred = model.predict(X_test)
     print(classification_report(y_test,y_pred))
@@ -85,6 +88,7 @@ def supervised_models(model, X_train, y_train, X_test, y_test):
     """
 
     model = model
+    # Fit supervised model using training data attributes and labels
     model.fit(X_train, y_train)
     probabilities = model.predict_proba(X_test)[:,1]
     y_pred = model.predict(X_test)
