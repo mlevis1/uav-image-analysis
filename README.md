@@ -16,6 +16,45 @@ The workflow requires the following Python 3.6.5 packages:
 * Rasterio
 * cv2
 
+1. Install the Earth Lab Conda Environment on your Local Computer.
+To begin, install git and conda for Python 3.x (we suggest 3.6).
+
+Installing git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
+Installing conda: https://www.anaconda.com/
+
+We recommend installing geo-related dependencies with conda-forge. We have created a custom yaml list with all of the dependencies that you will need to run the lessons in this course. Follow these steps below to get your environment ready.
+
+About Conda Environments: https://conda.io/docs/user-guide/tasks/manage-environments.html
+
+An environment for conda has been created specifically for this course. To load it, run:
+
+conda env create -f environment.yml
+
+Note that it takes a bit of time to run this setup
+Also note that for the code above to work, you need to be in the directory where the environment.yml file lives (ex: cd earth-analytics-python-env).
+To update this environment from a yaml file use: conda env update -f environment.yml
+
+To manage your conda environments, use the following commands:
+
+View envs installed
+conda info --envs
+
+Activate the environment that you'd like to use
+Conda 4.6 and later versions (all operating systems):
+
+conda activate earth-analytics-python
+Conda versions prior to 4.6:
+
+On Mac or Linux:
+
+source activate earth-analytics-python
+On Windows:
+
+activate earth-analytics-python
+The environment name is earth-analytics-python as defined in the environment.yml file.
+
+
 Image files in .jpg format are read from folders using the read_images function, and then input into a learning model that has been
 trained with a sample of images of known quality. Image names and classifications (0 for good, 1 for blacked-out, 2 for saturated, 3 for blurry) are read from test-images.csv. I am currently working with 424 labeled training and test images.
 
