@@ -31,7 +31,7 @@ About Conda Environments: https://conda.io/docs/user-guide/tasks/manage-environm
 
 An environment for conda has been created. To load it, run:
 
-conda env create -f environment.yml
+conda env create -f therm-env.yml
 
 Note that it takes a bit of time to run this setup
 Also note that for the code above to work, you need to be in the directory where the environment.yml file lives (ex: cd earth-analytics-python-env).
