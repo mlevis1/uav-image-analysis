@@ -23,11 +23,11 @@ Installing git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 
 Installing conda: https://www.anaconda.com/
 
-We recommend installing geo-related dependencies with conda-forge. We have created a custom yaml list with all of the dependencies that you will need to run the lessons in this course. Follow these steps below to get your environment ready.
+We recommend installing geo-related dependencies with conda-forge. We have created a custom yaml list with all of the dependencies that you will need. Follow these steps below to get your environment ready.
 
 About Conda Environments: https://conda.io/docs/user-guide/tasks/manage-environments.html
 
-An environment for conda has been created specifically for this course. To load it, run:
+An environment for conda has been created. To load it, run:
 
 conda env create -f environment.yml
 
@@ -56,7 +56,7 @@ The environment name is earth-analytics-python as defined in the environment.yml
 
 
 Image files in .jpg format are read from folders using the read_images function, and then input into a learning model that has been
-trained with a sample of images of known quality. Image names and classifications (0 for good, 1 for blacked-out, 2 for saturated, 3 for blurry) are read from test-images.csv. I am currently working with 424 labeled training and test images.
+trained with a sample of images of known quality. Image names and classifications (0 for good, 1 for blacked-out, 2 for saturated, 3 for blurry) are read from test-images.csv. I am currently working with 431 labeled training and test images.
 
 The final product will consist of a python module with which the user will input new folders of data for processing. Output is a dataframe of image names labeled as good, blacked-out, saturated, or blurry. 
 
@@ -80,4 +80,4 @@ svm_layers builds layers of SVM and fits model to the data
               
 supervised_models fits supervised models to the data and returns metrics
                
-plot_confusion_matrix plots confusion matrix with or without normalization
+plot_confusion_matrix plots normalized confusion matrix
