@@ -16,6 +16,8 @@ The workflow requires the following Python 3.6.5 packages:
 * Rasterio
 * cv2
 
+### Required Installations
+
 1. Install the Earth Lab Conda Environment on your Local Computer.
 To begin, install git and conda for Python 3.x (we suggest 3.6).
 
@@ -53,6 +55,21 @@ On Windows:
 
 activate earth-analytics-python
 The environment name is earth-analytics-python as defined in the environment.yml file.
+
+### Run Workflow
+
+1. Clone the repository https://github.com/mlevis1/uav-image-analysis, or download and decompress the zip file (see the green button for Clone or download). 
+
+2. Open a terminal and change directories to this directory (`cd uav-image-analysis`).
+
+3. Launch Jupyter Notebook and open final_product.ipynb.
+
+This notebook will implements the Random Forest Classification method, which proved to be the most accurate method of the four options explored for a training dataset provided by PrecisionHawk. 
+
+### Methods Explored 
+
+* Support Vector Machine (SVM): 
+
 
 
 Image files in .jpg format are read from folders using the read_images function, and then input into a learning model that has been
