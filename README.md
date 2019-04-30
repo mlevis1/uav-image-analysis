@@ -77,7 +77,7 @@ plot_confusion_matrix plots normalized confusion matrix
 
 ### Presentations
 
-
+blog.ipynb and blog.html: contains code for blog post
 
 
 
