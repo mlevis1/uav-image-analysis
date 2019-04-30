@@ -98,3 +98,5 @@ svm_layers builds layers of SVM and fits model to the data
 supervised_models fits supervised models to the data and returns metrics
                
 plot_confusion_matrix plots normalized confusion matrix
+
+
