@@ -61,6 +61,8 @@ trained with a sample of images of known quality. Image names and classification
 
 final_product.ipynb: Loads model for use with new, unlabeled data sets. The final product consists of a python module with which the user will input new folders of data for processing. Output is a dataframe of image names labeled as good, blacked-out, saturated, or blurry. 
 
+pred, img_list = predict_images('<your path here>', 'finalized_model.sav')
+
 test_notebooks.ipynb: Contain miscellaneous notebooks for viewing and manipulating data.
 
 ### Scripts
