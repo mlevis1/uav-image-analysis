@@ -52,6 +52,6 @@ dependencies:
       - mapboxgl
       - sklearn
       - hydrofunctions
-      - git+https://github.com/earthlab/earthpy.git@af51f956ed17b4d9ebf32623c23a8c0b9f8d265d
-      - cv2
+      - earthpy
+      - opencv-python
       - pickle
