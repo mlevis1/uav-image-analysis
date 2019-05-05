@@ -93,8 +93,6 @@ def supervised_models(model, X_train, y_train, X_test, y_test):
     probabilities = model.predict_proba(X_test)[:,1]
     y_pred = model.predict(X_test)
 
-    print(classification_report(y_test,y_pred))
-
     return model, probabilities, y_pred
 
 
