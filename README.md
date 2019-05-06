@@ -1,9 +1,9 @@
 ### Analysis of Thermal Imaging Using Machine and Predictive Learning Classification
 
 This repository contains the code for the final project in Earth Analytics to analyze data acquired by UAV sensors. Thermal imaging of
-powerlines and utility poles allow utility companies to identify objects that emit excessive heat before they fail. An efficient and cost-effective method of aquiring these images is through the use of drone mounted FLIR sensors. These return .jpg files measuring 640 x 512 pixels in 256 shades in the long range infrared band of the electromagnetic spectrum.
+powerlines and utility poles allow utility companies to identify objects that emit excessive heat before they fail. An efficient and cost-effective method of aquiring these images is through the use of drone mounted FLIR sensors. These return .jpg files measuring 640 x 512 pixels in 256 levels of intensity in the long range infrared band of the electromagnetic spectrum.
 
-Approximately 20% of these images are considered useless after review by the thermographer, often due to being blacked-out, saturated, or blurry. At $0.05 per image, removing these images prior to review could result in significant cost savings. This program uses machine
+Approximately 20% of these images are considered useless after review by the thermographer, often due to being blacked-out, saturated, or blurry. Removing these images prior to review could result in significant cost savings. This program uses machine
 learning algorithms to classify the images prior to being passed on for human review. 
 
 The workflow requires the following Python 3.6.5 packages: 
@@ -21,19 +21,15 @@ The workflow requires the following Python 3.6.5 packages:
 
 About Conda Environments: https://conda.io/docs/user-guide/tasks/manage-environments.html
 
-An environment for conda has been created. To load it, run:
+To install the environment in your Anaconda installation, run the following in the Terminal:
 
 conda env create -f therm-env.yml
 
 Note that it takes a bit of time to run this setup
 Also note that for the code above to work, you need to be in the directory where the therm-env.yml file lives.
 
-On Mac or Linux:
-source activate therm-env
-
-On Windows:
-
-source activate therm-env
+To activate this environment once it has been installed, run the following in the Terminal: 
+On Windows, Mac, and Linux: conda activate therm-env
 
 The environment name is therm-env as defined in the therm-env.yml file.
 
@@ -69,13 +65,13 @@ test_notebooks.ipynb: Contain miscellaneous notebooks for viewing and manipulati
 
 fit_models.py: 
 
-read_images reads in images and returns list of picture ID numbers based on the image name
+read_images(): a function that reads in images and returns list of picture ID numbers based on the image name
 
-svm_layers builds layers of SVM and fits model to the data
+svm_layers(): a function that builds layers of SVM and fits model to the data
               
-supervised_models fits supervised models to the data and returns metrics
+supervised_models(): a function that fits supervised models to the data and returns metrics
                
-plot_confusion_matrix plots normalized confusion matrix
+plot_confusion_matrix(): a function that plots normalized confusion matrix
 
 ### Presentations
 
