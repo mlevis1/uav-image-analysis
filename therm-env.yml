@@ -31,6 +31,9 @@ dependencies:
   # natural language processing
   - tweepy
   - nltk
+  
+  # other
+  - opencv
 
   # Jupyter Environment
   - notebook
