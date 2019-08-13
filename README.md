@@ -3,7 +3,7 @@
 This repository contains the code for the final project in Earth Analytics to analyze data acquired by UAV sensors. Thermal imaging of
 powerlines and utility poles allow utility companies to identify objects that emit excessive heat before they fail. An efficient and cost-effective method of aquiring these images is through the use of drone mounted FLIR sensors. These return .jpg files measuring 640 x 512 pixels in 256 levels of intensity in the long range infrared band of the electromagnetic spectrum.
 
-Approximately 20% of these images are considered useless after review by the thermographer, often due to being blacked-out, saturated, or blurry. Removing these images prior to review could result in significant cost savings. This program uses machine
+A significant percentage of these images are considered useless after review by the thermographer, often due to being blacked-out, saturated, or blurry. Removing these images prior to review could result in significant cost savings. This program uses machine
 learning algorithms to classify the images prior to being passed on for human review. 
 
 The workflow requires the following Python 3.6.5 packages: 
